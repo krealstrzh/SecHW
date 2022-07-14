@@ -1,5 +1,71 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        //Задание 1;
+        byte a = 1;
+        short b = 240;
+        int c = 145000;
+        long d = 143431413414124L;
+        float e = 0.12f;
+        double f = 0.14;
+        char g = '!';
+        boolean h = a == 3;
+        //Задание 2;
+        float fighterOne = 78.2f;
+        float fighterTwo = 82.7f;
+        float totalWeight = fighterOne + fighterTwo;
+        System.out.println("Общий вес бойцов - " + totalWeight + " кг");
+        float diffWeight = Math.abs(fighterOne - fighterTwo);
+        System.out.println("Разница в весе - " + diffWeight  + " кг");
+        //Задание 3;
+        int gPerKilos = 1000;
+        int bananas = 5;
+        int bananaWeight = 80;
+        int bananaTotal = bananas * bananaWeight;
+        int milkMl = 200;
+        int milkDensity = 105;
+        int milkTotal = (milkDensity * milkMl)/100;
+        int icecream = 2;
+        int iceWeight = 100;
+        int iceTotal = icecream * iceWeight;
+        int eggs = 4;
+        int eggWeight = 70;
+        int eggsTotal = eggs * eggWeight;
+        int breakfastTotalG = (bananaTotal + milkTotal + iceTotal + eggsTotal);
+        System.out.println("Общий вес завтрака - " + breakfastTotalG  + " кг");
+        double breakfastTotalKg = (double) breakfastTotalG / gPerKilos;
+        System.out.println("Общий вес завтрака - " + breakfastTotalKg  + " кг");
+        //Задание 4;
+        int gToK = 1000;
+        byte weightToLose = 7;
+        int minLoss = 250;
+        int maxLoss = 500;
+        double fastLoss = (double) (weightToLose * 1000) / maxLoss;
+        System.out.println("Минимальное кол-во дней для похудения - " + fastLoss);
+        double slowLoss = (double) (weightToLose * 1000) / minLoss;
+        System.out.println("Максимальное кол-во дней для похудения - " + slowLoss);
+        int medianLoss = (maxLoss + minLoss) / 2;
+        double mediumLoss = (double) (weightToLose * 1000) / medianLoss;
+        System.out.println("Среднее кол-во дней для похудения - " + mediumLoss);
+        //Задание 5;
+        int coefSalary = 10;
+        int percent = 100;
+        int monthInYear = 12;
+        int salaryMary = 67760;
+        int bonusMary = (salaryMary * coefSalary)/percent;
+        salaryMary = salaryMary + bonusMary;
+        int yearMaryBonus = bonusMary * monthInYear;
+        System.out.println("Маша теперь получает " + salaryMary + " рублей. Годовой доход вырос на " + yearMaryBonus + " рублей");
+        int salaryDen = 83690;
+        int bonusDen = (salaryDen * coefSalary)/percent;
+        salaryDen = salaryDen + bonusDen;
+        int yearDenBonus = bonusDen * monthInYear;
+        System.out.println("Денис теперь получает " + salaryDen + " рублей. Годовой доход вырос на " + yearDenBonus + " рублей");
+        int salaryKris = 76230;
+        int bonusKris = (salaryKris * coefSalary)/percent;
+        salaryKris = salaryKris + bonusKris;
+        int yearKrisBonus = bonusKris * monthInYear;
+        System.out.println("Кристина теперь получает " + salaryKris + " рублей. Годовой доход вырос на " + yearKrisBonus + " рублей");
+
+
     }
 }
